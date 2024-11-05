@@ -1,0 +1,18 @@
+/* Ne pas oublier de lier le fichier  */
+/* AltGr + 4 pour faire accolade  */
+/* On peut passer par le nom des balises pour changer leur style
+Attention en faisant ca on sélectionne TOUTES les balises h1, h2 et h3 .. */
+h1, h2, h3 {
+    color: red;
+}
+
+/* On peut modifier le style d'un élément en passant par son id 
+On viendra rajouter # devant le nom de l'id */
+#first-title {
+    text-align: center;
+}
+
+/* On peut aussi passer par les classes, on mettra un "." devant le nom de la classe */
+.blue-text {
+    color: blue;
+}

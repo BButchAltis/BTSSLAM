@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Pour commenter Contrôle Slash -->
+    <!-- Entre les balises head on trouve des balises meta cad des informations sur notre page
+    Ce qui est codé ente les balises head n'est pas destiné à apparaitre sur notre page
+    Exception faite du titre (qui apparait au niveau de l'onglet) -->
+    <!-- Pour commenter : Ctrl (ou cmd pour mac) + K + C / décommenter ctrl + K + U -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ici le titre de notre page qui apparait sur l'onglet -->
+    <title>Ma première page HTML</title>
+
+    <!-- !!!! On vient ici lier notre fichier de stale css à notre html (nécessaire sinon CSS marche po) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Le body contient les éléments (balises) destinés à apparaitre sur notre page
+    On codera toujours entre ces balises body -->
+
+    <!-- Avec les balises h (h1, h2, h3 etc) On crée des titres  -->
+    <!-- Ici je donne un id à mon h1, attention cependant les id ne sont pas réutilisables -->
+    <h1 id="first-title">Ceci est un gros titre !</h1>
+    <h2>Ceci est un titre plus petit</h2>
+    <h3 class="blue-text">Encore plus petit ...</h3>
+
+    <!-- Ici avec p on crée des paragraphes et avec "lorem" (ex: lorem*2) on crée du faux texte pour remplir nos balises -->
+    <p class="blue-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi beatae debitis laudantium cum amet facilis officia earum non eos? Neque maiores minima optio quas nam cum magnam quia architecto.
+    Totam tempore quod neque odio obcaecati asperiores tempora, placeat perferendis eum officiis vel molestias error nam voluptatibus adipisci reprehenderit! Corrupti totam autem incidunt enim impedit. Cum eos voluptas recusandae accusantium! </p>
+
+    <!-- La balise a permet de créer de sliens hypertextes. href désigne la cible du lien. -->
+    <a href="https://ecole-ipssi.com/" target="_blank">Clique ici c'est l'ipssi !</a>
+
+    <!-- La balise img pour les images, src étant la source de l'image et alt un message qui apparait
+    lorsque notre image ne s'affiche pas -->
+    <!-- <img src="./Paris.png" alt="Ici Paris"> -->
+
+    <!-- Ci dessous les listes : ol pour les liste ordonnées et ul pour les listes non-ordonnées
+    Les listes seront toujours composées de "li" cad des éléments de liste. -->
+    <ol>
+        <li>Coucou</li>
+        <li>Bonjour</li>
+        <li>Ciao</li>
+    </ol>
+
+    <ul>
+        <li>Bonjour</li>
+        <li>Bonjour</li>
+        <li>Ciao</li>
+    </ul>
+
+    <!-- La balise table permet de faire des tableaux, dans table n trouve des tr (cad table rows - les lignes du tableau)
+    Entre les premières balises tr on a des balises th pour les en-tetes (table header) et entre les balises tr suivantes
+    on trouve des balises td (table data) -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Ville</th>
+        </tr>
+        <tr>
+            <td>Jalabert</td>
+            <td>Romain</td>
+            <td>Nice</td>
+        </tr>
+        <tr>
+            <td>Doe</td>
+            <td>John</td>
+            <td>NYC</td>
+        </tr>
+    </table>
+
+    <!-- Point EMMET : Avec EMMET on peut générer du html en une seule ligne seulement -->
+    <!-- Ici j'ai fait : h1+h2+p+img+ul>li*4 -->
+    <!-- <h1></h1>
+    <h2></h2>
+    <p></p>
+    <img src="" alt="">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+
+    <!-- La div sert généralement de container, elle possède de multiples interets et permet notamment de regrouper des élémenst en son sein -->
+    <!-- C'est une balise cependant qui n'a que peu d'interet sémantique donc à utiliser avec parcimonie -->
+    <div>
+        <h4></h4>
+        <p></p>
+    </div>
+
+    <!-- Les balises sémantiques ? Ce sont des balises qui ont un contexte (nav pour la navbar, footer pour le footer)
+    Elles permettent une plus grande cohérence et lisibilité du site ainsi qu'un meilleur référencement sur les moteurs de recherche -->
+    <nav>
+    </nav>
+
+    <section>
+    </section>
+
+    <footer>
+    </footer>
+
+    <!-- La balise form pour les formulaires (de contact, de login ou autre) -->
+    <form>
+        <label for="username">Username</label>
+        <input name="username" type="text" placeholder="Ici votre username">
+        <input type="password" placeholder="Ici votre mot de passe...">
+        <input type="checkbox">
+        <input type="submit" value="Soumettre">
+    </form>
+
+    <!-- La balise select permet de faire des menus déroulants  -->
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <h2>Acheter des Lego</h2>
+    <p>Remplissez le formulaire ci-dessous pour commander des LEGO !</p>
+    <form>
+    <h3>Informations personnelles</h3>
+    <p>Civilité :</p>
+
+    <input value="mr" name="gender" type="radio">
+    <label for="">Mr<label>
+
+    <input value="mme" name="gender" type="radio">
+    <label for="gender">Mme</label>
+
+    <label for="firstname">Prénom</label>
+    <input placeholder="Votre prénom" name="firstname" type="text">
+
+    <label for="email">Email</label>
+    <input placeholder="Votre Email" name="email" type="text">
+
+    <h3>Informations de livraisons</h3>
+    <textarea name="adresse"></textarea>
+
+    <p>Quantité demandée</p>
+
+
+     
+     
+    
+    <h3></h3>
+    <p></p>
+
+</body>
+</html>
+
